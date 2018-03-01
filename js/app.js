@@ -38,12 +38,16 @@ function addNews(){
     let li = document.createElement("li");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
-    h2.innerHTML = title
+    h2.innerHTML = title                      
     p.innerHTML = snippet;
 
     li.appendChild(h2);
     li.appendChild(p);
     responseContainer.appendChild(li);
+
+    // let li = `<li>${snippet}</li>`;
+    // responseContainer.innerHTML = li;
+
   })
 }
 
